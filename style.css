@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:checked{
+    outline: none;
+}
+body{
+    color: #000;
+    font-family: 'Comfortaa', cursive;
+}
+
+.mainpage{
+    width: 100%;
+    height: 100vh;
+}
+.mainpage .logo-harry-potter{
+    padding: 0 35px;
+    height: 20vh;
+}
+.mainpage .logo-harry-potter img{
+    height: 180px;
+    width: 180px;
+    float: left;
+}
+
+.mainpage .main{
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+
+.main  .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 60%;
+    position: relative;
+    z-index: 1;
+}
+.main .details::before{
+    content: "";
+    position: absolute;
+    transform: translate(-7%, -5%);
+    background-color: #f8be7f94;
+    height: 450px;
+    width: 450px;
+    z-index: -1;
+    border-radius: 50%;
+
+}
+.details .quote{    
+    line-height: 10px;
+    width: 100%;
+    padding-left: 180px;
+    font-size: 180px;
+    font-weight: 700;
+    color: #319ea1;
+}
+.details .paragraph{
+    width: 50%;
+}
+.details p{
+    color: #929292;
+    font-size: 1.6rem;
+}
+.details .paragraph h4{
+    margin-top: 30px;
+    color: #319ea1;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.paragraph button{
+    margin: 1.2em;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #30b5b9;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+.main .image-harry-potter{
+    position: relative;
+    margin-left: 30px;
+    position: relative;
+}
+
+.main .image-harry-potter img{
+    height: 60vh;
+    width: 230px;
+    display: block;
+    z-index: 1;
+}
+
+.main .image-harry-potter::before{
+    content: "";
+    background-color: #30b5b9;
+    height: 60vh;
+    width: 230px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+}
+
+
+.footer{
+    padding: 0 35px;
+    margin-top: 20px;
+    height: 20vh;
+    /* display: flex; */
+}
+
+.footer .talkitout-logo{
+    float: left;
+}
+.footer .talkitout-logo img{
+    height: 70px;
+    width: 270px;
+}
+
+.footer .harrypotter-logo{
+    float: right;
+}
+.footer .harrypotter-logo img{
+    height: 70px;
+    width: 270px;
+}
+
+
+
+
+
+.modal-box{
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    overflow: auto;
+    background-color: #fff;
+    -webkit-animation-name: modalIn; 
+    -webkit-animation-duration: 0.6s;
+    animation-name: modalIn;
+    animation-duration: 0.6s
+}
+
+
+
+.close {
+    
+    color: black;
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+    background: transparent;
+    color: #000;
+    
+  }
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-para{
+      color: #000000;
+      font-size: 1.4rem;
+      padding: 100px;
+      line-height: 1.2em;
+  }
+
+  @-webkit-keyframes modalIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes modalIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+  @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+  }
+  
+
