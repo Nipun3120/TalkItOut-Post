@@ -92,6 +92,9 @@ body{
     border-radius: 30px;
     font-size: 1em;
 }
+.paragraph button:hover{
+    background-color: #17c9cf;
+}
 
 .main .image-harry-potter{
     position: relative;
